@@ -23,12 +23,12 @@ fetch('/api/low_stock_levels')
             options: {
                 responsive: true,  // Ensure the chart is responsive to window resizing
                 scales: {
-                    y: {
+                    yAxes: [{
                         beginAtZero: true  // Start the y-axis scale at zero
-                    },
-                    x: {
+                    }],
+                    xAxes: [{
                         display: true
-                    }
+                    }]
                 }
             }
         });
