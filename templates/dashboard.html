@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -9,7 +10,22 @@
         <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
         <link rel="stylesheet" href="static/dashboard_stylesheet.css">
     </head>
+    
     <body>
-        
+         <header>
+            <div class="dashboard-title">E-Commerce Data Dashboard</div>
+        </header>
+
+        <div class="container">
+            <section>
+                <div class="chart-row">
+                    <div class="chart-container full-width">
+                        <h2>Orders Over Time</h2>
+                        <canvas id="ordersChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </body>
 </html>
