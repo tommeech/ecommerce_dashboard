@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Data Dashboard</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
-        <link rel="stylesheet" href="static/dashboard_stylesheet.css">
-    </head>
-    
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <link rel="stylesheet" href="../static/dashboard_stylesheet.css">
+</head>
 
-         <header>
-            <div class="dashboard-title">E-Commerce Data Dashboard</div>
-        </header>
+<body>
 
-        <div class="container">
+    <header>
+        <div class="dashboard-title">E-Commerce Data Dashboard</div>
+    </header>
 
-            <section>
-                <div class="chart-row">
-                    <div class="chart-container full-width">
-                        <h2>Orders Over Time</h2>
-                        <canvas id="ordersChart"></canvas>
-                    </div>
+    <div class='container'>
+
+        <section>
+            <div class="chart-row">
+                <div class="chart-container full-width">
+                    <h2>Orders Over Time</h2>
+                    <canvas id="ordersChart"></canvas>
                 </div>
-            </section>
-            
-            <section>
-                <div class="chart-row">
-                    <div class="chart-container half-width">
-                        <h2>Stock Levels</h2>
-                        <canvas id="stockChart"></canvas>
-                    </div>
-                    <div class="chart-container half-width">
-                        <h2>Most Popular Products</h2>
-                        <canvas id="popularProductsChart"></canvas>
-                    </div>
-                </div>
-            </section>
-       
-        </div>
+            </div>
+        </section>
 
-    </body>
+        <section>
+            <div class="chart-row">
+                <div class="chart-container half-width">
+                    <h2>Low Stock Levels</h2>
+                    <canvas id="stockChart"></canvas>
+                </div>
+                <div class="chart-container half-width">
+                    <h2>Most Popular Products</h2>
+                    <canvas id="popularProductsChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer">© 2023 CCL Eccomerce Dashboard</div>
+    </footer>
+</body>
+
 </html>
