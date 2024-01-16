@@ -61,7 +61,7 @@ def most_popular_products_new() -> Response:
     ORDER BY total_quantity DESC
     LIMIT 10;
     """
-    
+
     result = query_db(query)
 
     products = [
@@ -71,4 +71,4 @@ def most_popular_products_new() -> Response:
     return jsonify(products)
 
 if __name__ == '__main__': #Will check that app.py is being run directly and not imported elsewhere
-    app.run(debug=True) #Will run server in debug mode. This allows for real time code changing without needing to restart the server each time. Not to be used in a production environment due to security risks
+    app.run(debug=False) #Will run server in debug mode. This allows for real time code changing without needing to restart the server each time. Not to be used in a production environment due to security risks
