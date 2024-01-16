@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
@@ -12,11 +12,13 @@
     </head>
     
     <body>
+
          <header>
             <div class="dashboard-title">E-Commerce Data Dashboard</div>
         </header>
 
         <div class="container">
+
             <section>
                 <div class="chart-row">
                     <div class="chart-container full-width">
@@ -25,6 +27,20 @@
                     </div>
                 </div>
             </section>
+            
+            <section>
+                <div class="chart-row">
+                    <div class="chart-container half-width">
+                        <h2>Stock Levels</h2>
+                        <canvas id="stockChart"></canvas>
+                    </div>
+                    <div class="chart-container half-width">
+                        <h2>Most Popular Products</h2>
+                        <canvas id="popularProductsChart"></canvas>
+                    </div>
+                </div>
+            </section>
+       
         </div>
 
     </body>
