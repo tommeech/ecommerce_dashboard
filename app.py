@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template, Response
 import sqlite3
 import pathlib
 
-working_directory = pathlib.Path(_file_).parent.absolute()
+working_directory = pathlib.Path(__file__).parent.absolute()
 DATABASE = working_directory / 'CCL_ecommerce.db'
 
 def query_db(query: str, args=()) -> list:
