@@ -92,7 +92,7 @@ def most_popular_products_new() -> Response:
     return jsonify(products)
 
 
-@app.route("/api/revenue_generation")
+@app.route("/api/revenue_genearation")
 def revenue_generation() -> Response:
     query = """
     SELECT o.order_date, SUM(od.price_at_time * od.quantity_ordered) AS total_revenue
