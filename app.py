@@ -92,7 +92,7 @@ def most_popular_products_new() -> Response:
     return jsonify(products)
 
 
-@app.route("/api/revenue_genearation")
+@app.route("/api/revenue_generation")
 def revenue_generation() -> Response:
     query = """
     SELECT o.order_date, SUM(od.price_at_time * od.quantity_ordered) AS total_revenue
@@ -139,7 +139,6 @@ def payment_method_popularity() -> Response:
     methods = [row[0] for row in result]
     counts = [row[1] for row in result]
     return jsonify({"methods": methods, "counts": counts})
-
 
 if __name__ == "__main__":
     app.run(debug=True)
