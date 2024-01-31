@@ -1,73 +1,84 @@
 /* General styling */
+
+/* Apply Arial font with a fallback to sans-serif for better compatibility */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .container {
-    width: 100%;
-    padding: 0;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Dashboard title */
-  .dashboard-title {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  /* Chart containers for responsive layout */
-  .chart-container {
-    padding: 20px;
-  }
-  
-  .full-width {
-    width: 100%;
-  }
-  
-  .half-width {
-    width: 50%;
-    float: left;
-    box-sizing: border-box;
-    padding: 20px;
-  }
-  
-  /* Adjusting the size of the pie charts */
-  #categoryPopularityChart,
-  #paymentMethodsChart {
-    height: 250px;
-  }
-  
-  /* Adjusting the size of the bar charts */
-  #ordersChart,
-  #revenueChart {
-    height: 300px;
-  }
-  
-  #popularProductsChart,
-  #stockChart {
-    height: 250px;
-  }
-  
-  /* Clearfix for floating elements */
-  .chart-row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  /* Copyright notice */
-  .footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f4f4f4; /* Set background color */
+}
+
+.container {
+  width: 100%; /* Occupy full width of the viewport */
+  padding: 0; /* Remove padding */
+  background-color: #fff; /* Set background color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Apply shadow effect */
+}
+
+/* Dashboard title */
+
+.dashboard-title {
+  text-align: center; /* Align text to the center */
+  font-size: 24px; /* Set font size */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  padding: 20px 0; /* Add padding */
+  background-color: #333; /* Set background color */
+  color: #fff; /* Set text color to white */
+}
+
+/* Chart containers for responsive layout */
+
+.chart-container {
+  padding: 20px; /* Add padding */
+}
+
+.full-width {
+  width: 100%; /* Occupy full width of the container */
+}
+
+.half-width {
+  width: 50%; /* Occupy half width of the container */
+  float: left; /* Float the element to the left */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  padding: 20px; /* Add padding */
+}
+
+/* Adjusting the size of the pie charts */
+
+/* Set height for pie charts */
+#categoryPopularityChart,
+#paymentMethodsChart {
+  height: 250px;
+}
+
+/* Adjusting the size of the bar charts */
+
+/* Set height for bar charts */
+#ordersChart,
+#revenueChart {
+  height: 300px;
+}
+
+#popularProductsChart,
+#stockChart {
+  height: 250px;
+}
+
+/* Clearfix for floating elements */
+
+/* Clear floating elements after the chart containers */
+.chart-row::after {
+  content: "";
+  clear: both; /* Clear floats */
+  display: table; /* Ensure proper rendering */
+}
+
+/* Copyright notice */
+
+.footer {
+  text-align: center; /* Align text to the center */
+  margin-top: 40px; /* Add margin at the top */
+  padding: 20px 0; /* Add padding */
+  background-color: #333; /* Set background color */
+  color: #fff; /* Set text color to white */
+}

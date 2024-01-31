@@ -2,71 +2,96 @@
 <html lang="en">
 
 <head>
+    <!-- Metadata for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the web page -->
     <title>Data Dashboard</title>
+    
+    <!-- Bootstrap CSS library for styling -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Chart.js library for creating charts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Adapter for using date-fns with Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    
+    <!-- Custom stylesheet for dashboard styling -->
     <link rel="stylesheet" href="../static/dashboard_stylesheet.css">
 </head>
 
 <body>
 
+    <!-- Header section with the dashboard title -->
     <header>
         <div class="dashboard-title">E-Commerce Data Dashboard</div>
     </header>
 
+    <!-- Main content container -->
     <div class='container'>
 
+        <!-- Section for Orders Over Time chart -->
         <section>
             <div class="chart-row">
                 <div class="chart-container full-width">
                     <h2>Orders Over Time</h2>
+                    <!-- Canvas for rendering the Orders Over Time chart -->
                     <canvas id="ordersChart"></canvas>
                 </div>
             </div>
         </section>
 
+        <!-- Section for Temperature chart -->
         <section>
             <div class="chart-row">
                 <div class="chart-container full-width">
                     <h2>Temperature</h2>
+                    <!-- Canvas for rendering the Temperature chart -->
                     <canvas id="temperatureChart"></canvas>
                 </div>
             </div>
         </section>
 
-
+        <!-- Section for Low Stock Levels and Most Popular Products charts -->
         <section>
             <div class="chart-row">
                 <div class="chart-container half-width">
                     <h2>Low Stock Levels</h2>
+                    <!-- Canvas for rendering the Low Stock Levels chart -->
                     <canvas id="stockChart"></canvas>
                 </div>
                 <div class="chart-container half-width">
                     <h2>Most Popular Products</h2>
+                    <!-- Canvas for rendering the Most Popular Products chart -->
                     <canvas id="popularProductsChart"></canvas>
                 </div>
             </div>
         </section>
+
+        <!-- Section for Popular Categories and Popular Payment Method charts -->
         <section>
             <div class="chart-row">
                 <div class="chart-container half-width">
                     <h2>Popular Categories</h2>
+                    <!-- Canvas for rendering the Popular Categories chart -->
                     <canvas id="categoryPopularityChart"></canvas>
                 </div>
                 <div class="chart-container half-width">
                     <h2>Popular Payment Method</h2>
+                    <!-- Canvas for rendering the Popular Payment Method chart -->
                     <canvas id="paymentMethodChart"></canvas>
                 </div>
             </div>
         </section>
 
+        <!-- Section for Revenue Over Time chart -->
         <section>
             <div class="chart-row">
                 <div class="chart-container full-width">
                     <h2>Revenue Over Time</h2>
+                    <!-- Canvas for rendering the Revenue Over Time chart -->
                     <canvas id="revenueChart"></canvas>
                 </div>
             </div>
@@ -74,10 +99,13 @@
 
     </div>
 
+    <!-- Footer section with copyright information -->
     <footer>
-        <div class="footer">© 2023 CCL Eccomerce Dashboard</div>
+        <div class="footer">© 2023 CCL E-commerce Dashboard</div>
     </footer>
-    <!-- LOAD OUR JAVASCRIPT FILE. Place this at the bottom of the page so that the DOM is loaded before the script is run. -->
+
+    <!-- Load custom JavaScript file for dashboard functionality -->
+    <!-- Placed this at the bottom of the page so that the DOM is loaded before the script is run -->
     <script src="../static/dashboard-script.js"></script>
 
 </body>
