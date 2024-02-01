@@ -169,5 +169,4 @@ fetchDataAndRenderChart("/api/temperature_over_time", "temperatureChart", (data)
       },
     ],
   },
-  // ... other options can be added as needed
 }));
