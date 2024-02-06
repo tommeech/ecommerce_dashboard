@@ -33,7 +33,7 @@ fetchDataAndRenderChart("/api/orders_over_time", "ordersChart", (data) => ({
   },
 }));
 
-// Example usage for a bar chart showing products with low stock levels
+//  usage for a bar chart showing products with low stock levels
 fetchDataAndRenderChart("/api/low_stock_levels", "stockChart", (data) => ({
   type: "bar",
   data: {
