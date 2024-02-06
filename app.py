@@ -102,9 +102,6 @@ def orders_over_time() -> Response:
         logging.error("Error in /api/orders_over_time: %s", e)
         abort(500, description="Error processing data.")
 
-# Similar detailed annotations continue for other route functions
-
-# ...
 
 # Route for fetching products with low stock levels from the local database
 @app.route("/api/low_stock_levels")
