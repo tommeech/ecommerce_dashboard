@@ -96,8 +96,10 @@ def orders_over_time() -> Response:
     try:
         # Execute the query and retrieve the results
         result = query_db(query)
+        # Extract product names and quantities from the query result
         dates = [row[0] for row in result]
         counts = [row[1] for row in result]
+        # Return the results in JSON format
         return jsonify({"dates": dates, "counts": counts})
     except Exception as e:
         # Log any errors and raise an HTTP 500 error with a description
