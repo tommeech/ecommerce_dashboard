@@ -86,6 +86,7 @@ FROM orders;
 # Route for fetching order data over time from the local database
 @app.route("/api/orders_over_time")
 def orders_over_time() -> Response:
+    # SQL query to retrieve product names and quantities with low stock levels
     query = """
     SELECT order_date, COUNT(order_id) AS num_orders
     FROM orders
@@ -93,6 +94,7 @@ def orders_over_time() -> Response:
     ORDER BY order_date;
     """
     try:
+        # Execute the query and retrieve the results
         result = query_db(query)
         dates = [row[0] for row in result]
         counts = [row[1] for row in result]
